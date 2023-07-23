@@ -1,4 +1,6 @@
-export const useSortedPosts = (props, sort) => {
+import {useMemo} from "react";
+
+export const useSortedPosts = (posts, sort) => {
     const sortedPosts = useMemo(( ) =>{
         console.log('Функция вызвалась')
         if (sort) {
